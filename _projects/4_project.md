@@ -1,10 +1,9 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Reddit Moods
+description: a system for subreddits sentiment analysis
+img: assets/img/reddit_mood/background.png
 importance: 3
-category: fun
 ---
 
 Every project has a beautiful feature showcase page.

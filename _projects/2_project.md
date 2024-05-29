@@ -1,11 +1,9 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Timbre
+description: a “music social media” that connects users with similiar music tastes
+img: assets/img/timbre/background_2.png
 importance: 2
-category: work
-giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,11 +1,9 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Timbre
+description: a “music social media” that connects users with similiar music tastes
+img: assets/img/timbre/background.png
 importance: 1
-category: work
-related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.

@@ -18,6 +18,6 @@ social: true # includes social icons at the bottom of the page
 
 I am a recent graduate with a BS in [Data Science and Analytics](https://engineering.case.edu/computer-and-data-sciences) from [Case Western Reserve University](https://case.edu/) (CWRU). Currently, I am working with Professor [Sakshi Arya](https://sakshiarya.github.io) from CWRU, researching decision-making problems in agricultural science using multi-armed bandit algorithms. 
 
-Previously, I was a Data Science intern at NASA Jet Propulsion Laboratory [(JPL)](https://www.jpl.nasa.gov/)'s [UAVSAR](https://uavsar.jpl.nasa.gov/) Mission team, where I worked on wildfire monitoring using machine learning techniques and synthetic aperture radar data collected through remote sensing.
+Previously, I was a Data Science intern at NASA Jet Propulsion Laboratory [(JPL)](https://www.jpl.nasa.gov/)'s [UAVSAR](https://uavsar.jpl.nasa.gov/) Mission team, where I worked on wildfire monitoring using machine learning techniques and synthetic aperture radar data collected through remote sensing. Before that, I spent some time in the Database Group at CWRU, directed by Professor [Yinghui Wu](https://yinghwu.github.io/index.html), helping with grahical user interface design and data management for materials research.
 
 _Website currently under construction_
