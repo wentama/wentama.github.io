@@ -4,6 +4,7 @@ title: Reddit Moods
 description: a system for subreddits sentiment analysis
 img: assets/img/reddit_mood/background.png
 importance: 3
+category:
 ---
 
 Every project has a beautiful feature showcase page.
