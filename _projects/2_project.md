@@ -4,6 +4,7 @@ title: Timbre
 description: a “music social media” that connects users with similiar music tastes
 img: assets/img/timbre/background_2.png
 importance: 2
+category: product
 ---
 
 Every project has a beautiful feature showcase page.
