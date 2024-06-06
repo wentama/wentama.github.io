@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Timbre
-description: a “music social media” that connects users with similiar music tastes
-img: assets/img/timbre/background_2.png
+title: Reddit Moods
+description: a system for subreddits sentiment analysis
+img: assets/img/reddit_mood/background.png
 importance: 2
-category: product
+category: group
 ---
 
 Every project has a beautiful feature showcase page.
