@@ -13,7 +13,7 @@ __Skills & Tools invovled:__ Python, Javascript, PostgreSQL, Node.js, React, Alg
 Timbre works with existing music services to fill a gap by providing a solution for music social media. Most music streaming services recommend music primarily based on the music that someone has listened to, but Timbre differs by providing recommendations based on the music that other people with similar preferences recommend, which combines both a data science approach with a social media aspect.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/timbre/background.png" title="login image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -69,10 +69,10 @@ The user is able to view their calculated compatibility score as well as informa
 This page serves as a hub for users to perform “social” actions, such as viewing, accepting, or denying their incoming friend requests, sending song recommendations to friends, and viewing recommendations they have received from others.
 
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/timbre/friends.png" title="friendpage image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/timbre/song_rec_to.png" title="song recommendation to friend" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -81,7 +81,7 @@ This page serves as a hub for users to perform “social” actions, such as vie
 </div>
 
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm mt-1 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/timbre/friends.png" title="friendpage image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -90,7 +90,7 @@ This page serves as a hub for users to perform “social” actions, such as vie
 </div>
 
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/timbre/friend_request.png" title="friendpage image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
