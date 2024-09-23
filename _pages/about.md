@@ -16,8 +16,10 @@ selected_papers: false  # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a recent graduate with a BS in [Data Science and Analytics](https://engineering.case.edu/computer-and-data-sciences) from [Case Western Reserve University](https://case.edu/) (CWRU). Currently, I am working with Professor [Sakshi Arya](https://sakshiarya.github.io) from CWRU, researching decision-making problems in agricultural science using multi-armed bandit algorithms. 
+I am a recent graduate with a BS in [Data Science and Analytics](https://engineering.case.edu/computer-and-data-sciences) from [Case Western Reserve University](https://case.edu/) (CWRU). Currently, I work as a Data Science and Remote Sensing Intern at [CTrees](https://ctrees.org/about), focusing on global carbon tracking through change detection machine learning algorithms and satellite data.
 
-Previously, I was a Data Science intern at NASA Jet Propulsion Laboratory [(JPL)](https://www.jpl.nasa.gov/)'s [UAVSAR](https://uavsar.jpl.nasa.gov/) Mission team, where I worked on wildfire monitoring using machine learning techniques and synthetic aperture radar data collected through remote sensing. Before that, I spent some time in the Database Group at CWRU, directed by Professor [Yinghui Wu](https://yinghwu.github.io/index.html), helping with grahical user interface design and data management for materials research.
+Previously, I interned at NASA’s Jet Propulsion Laboratory [(JPL)](https://www.jpl.nasa.gov/) with the [UAVSAR](https://uavsar.jpl.nasa.gov/) Mission team, applying machine learning techniques to wildfire monitoring using synthetic aperture radar data from remote sensing. During my time at CWRU, I collaborated with Professor [Sakshi Arya](https://sakshiarya.github.io) on research into decision-making problems in agricultural science using multi-armed bandit algorithms. Additionally, I contributed to the Database Group under Professor [Yinghui Wu](https://yinghwu.github.io/index.html), where I assisted with graphical user interface design and data management for materials research.
+
+__Skills & Tools__: Python, R, SQL, Javascript, Unix, AWS EC2, AWS S3, TensorFlow, Scikit-learn, QGIS, Google Earth Engine, Synthetic Aperture Radar (SAR) data analysis, Remote Sensing, Data Visualization, Machine Learning, Multi-Armed Bandit Algorithms, GUI design.
 
 _Website currently under construction_

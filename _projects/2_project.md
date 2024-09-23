@@ -2,79 +2,64 @@
 layout: page
 title: Reddit Moods
 description: a system for subreddits sentiment analysis
-img: assets/img/reddit_mood/background.png
-importance: 2
-category: group
+img: assets/img/reddit_moods/background.png
+importance: 3
+category: development
 ---
+This project involved developing a system to predict the sentiment of posts in user-specified subreddits, utilizing an end-to-end architecture built on AWS and a machine learning-based NLP pipeline.
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+__Skills & Tools invovled:__ Python, AWS, TypeScript, Deep Learning, Model Selection, Data Curation, Data Validation
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Reddit Moods is a web-based application designed to predict the overall sentiment of posts in user-specified subreddits. Built with a scalable serverless architecture using AWS Lambda, API Gateway, and a React-powered frontend, the system processes the top 25 subreddit posts and analyze their sentiment (positive, neutral, or negative) through pre-trained NLP models. The solution is optimized for efficient deployment while offering real-time sentiment insights.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/reddit_moods/homepage.png" title="mainpage image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Fig 1. Main Page.
 </div>
+
+The frontend utilizes three tools: TypeScript, React, and Chakra UI. And the backend consists of two main components: AWS API Gateway and AWS Lambda. All of them work together to have our application deployed through AWS CloudFormation. Our group consists of 4 members and I primarily worked on the backend and data pipeline to:
+- design data ingestion pipeline for tokenization, preprocessing, and analysis 
+- curate validation datasets for model evaluation
+- assess deep learning model performances
+
+__Skills & Tools invovled:__ Python, AWS, TypeScript, Deep Learning, Model Selection, Data Curation, Data Validation
+
+### System Architecture
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/reddit_moods/workflow.png" title="workflow chart image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Fig 2. Workflow showing overview of the data engineering system.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The system starts with the user, who will access our frontend web application to input a subreddit of interest. Upon submitting, it trigger a request sent to the AWS API Gateway. This then provide a secure and scalable entry point to AWS Lambda, which performs the modeling on data returned from real-time Reddit API call and fetch results to send back to Gateway. The outputs will then be returned to the user on our frontend. 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+### Web Application
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/reddit_moods/output.png" title="workflow chart image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Fig 3. Output showing the sentiment and confidence score.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Upons submitting subreddit input via the `Get Subreddit Mood` button as shown in Fig 1. The sentiment value (positive, neutral, or negative) of the subreddit is returned to the user along with a confidence score. A breakdown of the analysis is also included beneath the overall sentiment, showing the top 25 headings that were ingested along with their sentiment. 
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/reddit_moods/analysis_breakdown.png" title="workflow chart image" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    Fig 4. A breakdown of top headings by sentiment.
+</div>
 
-{% endraw %}
