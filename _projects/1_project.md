@@ -81,8 +81,8 @@ This page serves as a hub for users to perform “social” actions, such as vie
 </div>
 
 <div class="row">
-    <div class="col-sm mt-1 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/timbre/friends.png" title="friendpage image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+        {% include figure.liquid loading="eager" path="assets/img/timbre/song_rec_from.png" title="friendpage image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -90,7 +90,7 @@ This page serves as a hub for users to perform “social” actions, such as vie
 </div>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0 mx-auto">
         {% include figure.liquid loading="eager" path="assets/img/timbre/friend_request.png" title="friendpage image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -101,3 +101,12 @@ This page serves as a hub for users to perform “social” actions, such as vie
 ### Profile
 
 This page displays a user's personal details, such as their display name and bio. They also have the ability to update and change their bio, which is what is displayed to other users when they are matched. Additionally, users can resync their Spotify accounts, which will trigger reauthentication; this will also trigger recalculation of song profiles and compatibility scores.
+
+<div class="row">
+    <div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+        {% include figure.liquid loading="eager" path="assets/img/timbre/profile.png" title="friendpage image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fig 7. Profile screen, displaying user info and allowing update of the SQL database.
+</div>

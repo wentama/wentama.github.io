@@ -13,7 +13,7 @@ __Skills & Tools invovled:__ Python, AWS, TypeScript, Deep Learning, Model Selec
 Reddit Moods is a web-based application designed to predict the overall sentiment of posts in user-specified subreddits. Built with a scalable serverless architecture using AWS Lambda, API Gateway, and a React-powered frontend, the system processes the top 25 subreddit posts and analyze their sentiment (positive, neutral, or negative) through pre-trained NLP models. The solution is optimized for efficient deployment while offering real-time sentiment insights.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/reddit_moods/homepage.png" title="mainpage image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -31,7 +31,7 @@ __Skills & Tools invovled:__ Python, AWS, TypeScript, Deep Learning, Model Selec
 ### System Architecture
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/reddit_moods/workflow.png" title="workflow chart image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -44,7 +44,7 @@ The system starts with the user, who will access our frontend web application to
 ### Web Application
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/reddit_moods/output.png" title="workflow chart image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -55,7 +55,7 @@ The system starts with the user, who will access our frontend web application to
 Upons submitting subreddit input via the `Get Subreddit Mood` button as shown in Fig 1. The sentiment value (positive, neutral, or negative) of the subreddit is returned to the user along with a confidence score. A breakdown of the analysis is also included beneath the overall sentiment, showing the top 25 headings that were ingested along with their sentiment. 
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/reddit_moods/analysis_breakdown.png" title="workflow chart image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
