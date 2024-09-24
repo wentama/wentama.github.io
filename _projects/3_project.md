@@ -15,10 +15,10 @@ __The project report can be assessed [here](https://github.com/wentama/uavsar_wi
 __Published code can be found on JPL's GitHub [here](https://github.com/nasa-jpl/uavsar-wildfire).__
 
 <div class="row">
-    <div class="col-sm-5 mt-3 mt-md-0">
+    <div class="col-sm-5.5 mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/uavsar/study_area.png" title="study area image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-7 mt-3 mt-md-0">
+    <div class="col-sm-6.5 mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/uavsar/fire_timeline.png" title="fire timeline image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -30,7 +30,7 @@ __Published code can be found on JPL's GitHub [here](https://github.com/nasa-jpl
 Below shows a sample output fire perimeter and burn severity of the 2020 La Tuna Fire. 
 
 - __Radar (UAVSAR)__: The outputs under `previous` and `improved` are generated using UAVSAR's polarmetric data. Radar has the ability to penetrates clouds, smoke, and vegetation. As a result, radar is sensitive to surface structure and moisture, making it effective in detecting burn impacts, even in challenging conditions.
-- __Optical (Landsat/Sentinel-2)__: The baseline output, from [MTBS](https://www.mtbs.gov/), used Landsat and Sentinel-2 optical imagery. Optical sensors capture surface reflectance and vegetation health but are limited by clouds or smoke.
+- __Optical (Landsat/Sentinel-2)__: The `baseline`, from [MTBS](https://www.mtbs.gov/), used Landsat and Sentinel-2 optical imagery. Optical sensors capture surface reflectance and vegetation health but are limited by clouds or smoke.
 - __Differences__: The variation in burn severity between radar and optical data reflects their different methods of observation. Radar focuses on structural changes, while optical sensors highlight reflectance, leading to distinct assessments. However, their perimeter remain constant. 
   
 <div class="row">

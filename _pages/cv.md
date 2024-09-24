@@ -1,11 +1,12 @@
 ---
 layout: cv
-permalink: /cv/
-title: cv
+permalink: /resume/
+title: resume
 nav: true
 nav_order: 5
-cv_pdf: example_pdf.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+redirect: https://wentama.github.io/assets/pdf/WenTao.Lin_Resume_web.pdf
+cv_pdf: WenTao.Lin_Resume_web.pdf
+description: resume
 toc:
   sidebar: left
 ---
