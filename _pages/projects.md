@@ -5,9 +5,10 @@ permalink: /projects/
 description: A growing collection of projects.
 nav: true
 nav_order: 3
-display_categories: [development, research & anlysis, fun]
+display_categories: [development, research & analysis, fun]
 horizontal: false
 ---
+__under construction__
 
 <!-- pages/projects.md -->
 <div class="projects">
