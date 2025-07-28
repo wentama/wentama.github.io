@@ -27,6 +27,45 @@ The front-end and middleware is built using Next.js, a React based full-stack fr
 - formulate user-matching procedure and algorithm 
 - integrate SQL and javascript functions to process frontend requests
 
+### Database Design
+Timbre’s relational database is implemented and hosted on PostgreSQL, with a schema of nine tables covering users, songs, ratings, music characteristics, and social features like friendships and recommendations. User preferences are modeled using Spotify listening data, stored in the `song_profile` table with features like valence, danceability, and loudness.
+
+To support personalized recommendations and social matching, we track song ratings and compatibility between users. The database includes stored procedures and functions (e.g., `make_rating`, `get_top_ratings`) to manage and retrieve data efficiently, with security privileges in place to control access.
+
+The design evolved alongside the project, adapting to new features and user needs. See the ER diagram below for the full schema.
+
+<div class="row">
+    <div class="col-sm-6 mt-3 mt-md-0 mx-auto">
+    {% include figure.liquid loading="eager" path="assets/img/timbre/database.png" title="ERD database" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fig 2. ER diagram
+</div>
+
+### Matching Algorithm
+To measure music compatibility between users, we developed a scoring system based on Spotify audio features. We use nine key attributes provided by Spotify's API for each track - scaled between 0 and 1 - to represent a user’s music taste:
+
+- _Danceability, Energy, Loudness, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, and Tempo_
+
+For each user, we aggregate songs across four categories, each contributing differently to the final compatibility score:
+
+- 30% – Top 10 user-rated songs (weighted by rating)
+- 30% – Top 10 Spotify songs (weighted by ranking)
+- 20% – 15 Recently played songs (unweighted)
+- 20% – Top 5 artists (5 songs per artist, artists weighted)
+
+We calculate the average feature vectors for each category, then compute a weighted similarity score between users. The diagram below illustrates the full workflow from user input to compatibility output.
+
+<div class="row">
+    <div class="col-sm-6 mt-3 mt-md-0 mx-auto">
+    {% include figure.liquid loading="eager" path="assets/img/timbre/workflow.png" title="Workflow Diagram" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fig 3. Workflow from Input to Output
+</div>
+
 ## Site Breakdown
 The site can be broken down into four pages: home, matches, friends, and profile.
 
@@ -41,7 +80,7 @@ The site can be broken down into four pages: home, matches, friends, and profile
     </div>
 </div>
 <div class="caption">
-    Fig 2. Homepage screen. Left: homepage with the search bar and top tracks of the user. Right: song view that allows one to play and rate the song upon clicking the track in the search bar or in the top tracks page.
+    Fig 4. Homepage screen. Left: homepage with the search bar and top tracks of the user. Right: song view that allows one to play and rate the song upon clicking the track in the search bar or in the top tracks page.
 </div>
 
 This page provides the user's listening data and allows them to search and rate songs to help us improve their matches. Through Spotify API, we fetch user's recent tracks and display them on the homepage. Users can search for specific songs or artists and provide ratings. These ratings are then used to refine our matching algorithm, ensuring that future matches better align with the user's preference. Additionally, the page updates in real-time, whenever, the user logs in or resync with Spotify.
@@ -61,7 +100,7 @@ The user is able to view their calculated compatibility score as well as informa
     </div>
 </div>
 <div class="caption">
-    Fig 3. Matches screen. Left: matches page, with front-side cards showing the profile picture and display name, and the back-side card showing the compatibility score. Right: pressing the “Open Bio” allows the user to view each match’s bio text.
+    Fig 5. Matches screen. Left: matches page, with front-side cards showing the profile picture and display name, and the back-side card showing the compatibility score. Right: pressing the “Open Bio” allows the user to view each match’s bio text.
 </div>
 
 ### Friends
@@ -77,7 +116,7 @@ This page serves as a hub for users to perform “social” actions, such as vie
     </div>
 </div>
 <div class="caption">
-    Fig 4. Friends screen. Left: friend list, showing the compatibility scores, as well as the ability to recommend friends songs. Right: A search bar pops up that allows the user to recommend any song to their friends.
+    Fig 6. Friends screen. Left: friend list, showing the compatibility scores, as well as the ability to recommend friends songs. Right: A search bar pops up that allows the user to recommend any song to their friends.
 </div>
 
 <div class="row">
@@ -86,7 +125,7 @@ This page serves as a hub for users to perform “social” actions, such as vie
     </div>
 </div>
 <div class="caption">
-    Fig 5. The recommendations screen allows users to view, play, and rate their song recommendations from other friends.
+    Fig 7. The recommendations screen allows users to view, play, and rate their song recommendations from other friends.
 </div>
 
 <div class="row">
@@ -95,7 +134,7 @@ This page serves as a hub for users to perform “social” actions, such as vie
     </div>
 </div>
 <div class="caption">
-    Fig 6. Requests screen. Top: A search bar allows the user to type in an email to send a friend request. Bottom: Incoming friend requests can be accepted and denied.
+    Fig 8. Requests screen. Top: A search bar allows the user to type in an email to send a friend request. Bottom: Incoming friend requests can be accepted and denied.
 </div>
 
 ### Profile
@@ -108,5 +147,5 @@ This page displays a user's personal details, such as their display name and bio
     </div>
 </div>
 <div class="caption">
-    Fig 7. Profile screen, displaying user info and allowing update of the SQL database.
+    Fig 9. Profile screen, displaying user info and allowing update of the SQL database.
 </div>
