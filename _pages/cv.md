@@ -4,8 +4,8 @@ permalink: /resume/
 title: resume
 nav: true
 nav_order: 5
-redirect: https://wentama.github.io/assets/pdf/WenTao.Lin_Resume_012226.pdf
-cv_pdf: WenTao.Lin_Resume_012226.pdf
+redirect: https://wentama.github.io/assets/pdf/WenTao.Lin_Resume.pdf
+cv_pdf: WenTao.Lin_Resume.pdf
 description: redirecting to the pdf... Or click the `PDF` icon on the right if idle.
 # toc:
 #   sidebar: left
